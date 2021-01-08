@@ -1,0 +1,263 @@
+/* @charset "UTF-8"; */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* body {
+  background: #fff7ec;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+  -webkit-font-smoothing: antialiased;
+} */
+
+.icon {
+  width: 1em;
+  height: 1em;
+}
+
+.container {
+  display: flex;
+  width: 1100px;
+  height: 100%;
+  margin: 20px auto;
+}
+.container .signup-thumb {
+  display: flex;
+  width: 500px;
+  background-color: #f2bda5;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.container .signup-thumb img {
+  max-width: 100%;
+}
+.container .signup-form {
+  display: flex;
+  flex-direction: column;
+  width: 866px;
+  padding: 30px 60px;
+  background-color: #fff;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.container .signup-form .form-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.container .signup-form .form-header .logo {
+  display: flex;
+  align-items: center;
+  color: #7d4830;
+  text-decoration: none;
+}
+.container .signup-form .form-header .logo svg {
+  fill: #7d4830;
+  font-size: 42px;
+}
+.container .signup-form .form-header .logo span {
+  margin-left: 10px;
+  font-size: 25px;
+  font-weight: 900;
+}
+.container .signup-form .form-header .sign-in {
+  margin-left: auto;
+  color: #767272;
+  font-size: 14px;
+}
+.container .signup-form .form-header .sign-in a {
+  margin-left: 3px;
+  color: #ebae93;
+  text-decoration: underline;
+}
+.container .signup-form h1 {
+  font-size: 54px;
+  font-weight: 900;
+  color: #ebae93;
+}
+.container .signup-form p {
+  font-size: 25px;
+  color: #7d4830;
+}
+.container .signup-form .form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 55px;
+}
+.container .signup-form .form .form-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.container .signup-form .form .form-group-item {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 25px;
+}
+.container .signup-form .form .form-group-item label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #767272;
+  margin-bottom: 7px;
+}
+.container .signup-form .form .form-group-item:focus-within label {
+  color: #ebae93;
+}
+.container .signup-form .form .form-group-item input {
+  height: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 2px solid #767272;
+  border-radius: 8px;
+  outline: 0;
+  transition: ease-out 200ms;
+}
+.container .signup-form .form .form-group-item input::-webkit-input-placeholder {
+  color: #767272;
+  font-size: 13px;
+}
+.container .signup-form .form .form-group-item input:focus {
+  border: 2px solid #ebae93;
+  color: #ebae93;
+}
+.container .signup-form .form .form-group-item input:focus::-webkit-input-placeholder {
+  color: #ebae93;
+}
+.container .signup-form .form .terms {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: 25px;
+}
+.container .signup-form .form .terms input {
+  display: none;
+}
+.container .signup-form .form .terms input + *::before {
+  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 5px;
+  border: 2px solid #767272;
+  transition: ease-out 200ms;
+  cursor: pointer;
+  margin-right: 10px;
+  font-style: normal;
+}
+.container .signup-form .form .terms input:checked + * {
+  color: #ebae93;
+}
+.container .signup-form .form .terms input:checked + *::before {
+  content: "✓";
+  color: #ebae93;
+  text-align: center;
+  border-color: #ebae93;
+}
+.container .signup-form .form .terms label {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10px;
+  font-style: italic;
+  cursor: pointer;
+  color: #767272;
+}
+.container .signup-form .form .terms label a {
+  color: #ebae93;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.container .signup-form .form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background-color: #ebae93;
+  border: 0;
+  padding: 0 50px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 100px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: ease-out 200ms;
+}
+.container .signup-form .form button:hover, .container .signup-form .form button:active, .container .signup-form .form button:focus {
+  background-color: rgba(235, 174, 147, 0.8);
+}
+.container .signup-form .form-footer {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+}
+.container .signup-form .form-footer span {
+  font-size: 12px;
+  color: #c4c9cd;
+  margin-right: 30px;
+}
+.container .signup-form .form-footer .social-signin {
+  display: flex;
+  align-items: center;
+}
+.container .signup-form .form-footer .social-signin a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background-color: #c4c9cd;
+  border-radius: 100px;
+  transition: ease-out 200ms;
+}
+.container .signup-form .form-footer .social-signin a:not(:last-child) {
+  margin-right: 10px;
+}
+.container .signup-form .form-footer .social-signin a:hover, .container .signup-form .form-footer .social-signin a:active, .container .signup-form .form-footer .social-signin a:focus {
+  background-color: rgba(235, 174, 147, 0.8);
+}
+.container .signup-form .form-footer .social-signin a svg {
+  fill: #fff;
+  font-size: 0.7em;
+}
+
+.owner-coding {
+  right: 1em;
+}
+.owner-design {
+  left: 1em;
+}
+.owner-design, .owner-coding {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  color: #333;
+  bottom: 1em;
+  text-decoration: none;
+  font-size: 12px;
+}
+.owner-design .avatar, .owner-coding .avatar {
+  width: 26px;
+  height: 26px;
+  margin: 0 5px;
+  border-radius: 100px;
+  overflow: hidden;
+}
+.owner-design .avatar img, .owner-coding .avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

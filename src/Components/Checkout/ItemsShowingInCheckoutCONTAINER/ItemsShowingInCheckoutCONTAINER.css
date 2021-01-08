@@ -1,0 +1,38 @@
+.discountCodeEtcOptions{
+    background-color: #fafafa;
+    padding: 0 60px 0 30px ;
+    flex: 1;
+  }
+
+  /* .ItemsShowingInCheckout{
+  /* background-color: purple; */
+/* } */ 
+
+
+
+.totalInCheckout{
+    display: flex;
+    /* background-color: red; */
+    align-items: center;
+  }
+
+
+  .btn {
+    width: 35%;
+    margin-right: 3%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+    transition: all 0.3s ease;
+    margin: 30px 0;
+    padding: 15px 0;
+
+background-color: rgb(128, 128, 128);
+color: #fff;
+
+  }
+  
+  .btn:hover {
+    background: #69B692;
+    border-color: #69B692;
+    cursor: pointer;
+  }
