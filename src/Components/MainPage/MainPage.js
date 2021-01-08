@@ -109,7 +109,27 @@ this.setState({shoeImageURL:mainURL})
 
 
     onZoomStartttt = event=>{
-        // console.log('onZoomStart');
+        console.log('onZoomStart');
+
+
+let ap = document.querySelector(".wheck img");
+console.log(ap);
+
+
+
+if(ap.src.includes("Tokio")){
+    console.log('wwwww');
+    
+}else{
+//     ap.style.height = "100%";
+// ap.style.width = "100%";
+
+ap.style.height = "100%";
+ap.style.width = "100%";
+
+}
+
+
 
     }
 
@@ -128,6 +148,9 @@ this.setState({shoeImageURL:mainURL})
 
 
     mouseEnteringInTryingDIV = event=>{
+
+        console.log('enterinngggg');
+        
 
         let trying = document.querySelector("#trying");
         

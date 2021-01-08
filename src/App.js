@@ -10,7 +10,11 @@ import {BrowserRouter,Switch,Route} from 'react-router-dom';
 import Cart from './Components/Cart/Cart';
 import Checkout from './Components/Checkout/Checkout';
 // import PaymentFORM from './Components/PaymentFORM/PaymentFORM';
-import Stripeee from './Components/Stripee/Stripee';
+// import Stripeee from './Components/Stripee/Stripee';
+import CARDDBROOO from './Components/STRIPEEEE/stripefrontend/src/CARDDBROOO';
+
+import FORMFROMCODEPEN from './Components/FORMFROMCODEPEN/FORMFROMCODEPEN';
+
 class App extends Component {
 
 render(){
@@ -56,7 +60,13 @@ render(){
 
 {/* <PaymentFORM/> */}
 
-<Stripeee/>
+{/* <Stripeee/> */}
+
+
+ <CARDDBROOO/>
+
+{/* <FORMFROMCODEPEN /> */}
+
 
 </Auxx>
 </BrowserRouter>

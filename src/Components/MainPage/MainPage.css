@@ -36,15 +36,20 @@ background-position: center center;
 }
 
 .wheck{
-    background-color: yellow;
-    background-size: cover !important;
+    /* background-color: yellow; */
+    /* background-size: cover !important; */
     background-position: center center !important;
     width: 80%;
     height: 85%;
     transform: translateX(-50%) !important;
     left: 50% !important;
     top: 0% !important;
+    overflow: visible !important;
 
+}
+
+#trying{
+    background-color: green;
 }
 
 .shoeotherimages{

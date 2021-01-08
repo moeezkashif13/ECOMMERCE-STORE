@@ -1,9 +1,9 @@
 
 .column{
     /* background-color: orange; */
-    width: 22%;
+    width: 23%;
     height: 70%;
-    margin: 0 20px;
+    margin: 0 10px;
     position: relative;
 
 }
@@ -21,14 +21,11 @@
 
 .column .pic{
     /* background-color: gray; */
-    height: 50%;
+    height: 70%;
     width: 100%;
-
-    
-
     background-repeat: no-repeat;
-    /* background-size: cover; */
-    background-size: 150%;
+    background-size: cover;
+    /* background-size: 150%; */
 background-position: center center;
 
 }
